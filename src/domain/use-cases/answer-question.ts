@@ -8,7 +8,7 @@ interface Input {
 
 export class AnswerQuestionUseCase {
   execute({instructorId, questionId, content}:Input) {
-    const answer = new Answer(content)
+    const answer = new Answer(content, instructorId, questionId)
     return answer
   }
 }
